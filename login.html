@@ -1,0 +1,27 @@
+
+<?php
+$name=$_POST['user'];
+$pass=$_POST['pass'];
+$na='admin';
+$pa=1234;
+$co=mysql_connect("localhost","root","");
+mysql_select_db('gallery');
+$x="insert into users values('$name','$pass')";
+$ex=mysql_query($x);
+if($name==$na&&$pa==$pass)
+{
+	echo "LOGGED IN";
+	<!DOCTYPE html>
+<html>
+<body>
+	<a href="home.html"><button>enter</button></a>
+	</body>
+</html>
+}
+else 
+{
+echo "incorrect password and username";	
+}
+mysql_close($co);
+?>
+<

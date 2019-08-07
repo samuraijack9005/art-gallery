@@ -1,0 +1,67 @@
+<html>
+<head><title>customer info</title></head>
+<body style="background-image:url('ren.jpg');background-repeat:no-repeat;background-size:cover;">
+
+<h1 style="text-align:center;color:white;">CUSTOMER</h1>
+<form action="customer.php" method="POST"/>
+<table style="background-color:gray;" border="3px">
+<tr>
+<th style="color:;">Cust_id</th>
+<td><input type="text" name="cust_id"/></td>
+</tr>
+<tr>
+<th style="color:;">Cust_name</th>
+<td><input type="text" name="cust_name"/></td>
+</tr>
+<tr>
+<th style="color:;">Cust_address</th>
+<td><input type="text" name="cust_address"/></td>
+</tr>
+<tr>
+<th style="color:;">Cust_email</th>
+<td><input type="email" name="cust_email"/></td>
+</tr>
+<tr>
+<th style="color:;">Cust_phone</th>
+<td><input type="text" name="cust_phone"/></td>
+</tr>
+<tr>
+<td> <input type="submit"/></td>
+<td> <input type="reset"/> </td>
+</tr>
+</table>
+</form>
+<table align="bottom" width="25" height="10" cellpadding="-600">
+<td><a href="http://localhost/phpmyadmin/sql.php?db=gallery&table=customer&printview=1&sql_query=SELECT+%2A+FROM+%60customer%60&pftext=F&token=5a5d8fec64e4d5e8b4af2385c6a0a3fb"><font size="4" face="verdana"><button>Show_Table</button></font></a></td>
+</table>
+<form action="customer_delete.php" method="POST"/>
+<right>
+<table align="right" width="25" height="10" cellpadding="-600">
+<tr>
+<th style="color:white;font-family:verdana;background-color:red;">Customer_id</th><td>
+<td><input  type="text" name="id"/></td>
+
+
+<td><input type="submit" value="Delete"/></td>
+</td></tr></tr>
+</table></right>
+</form>
+
+<form action="customer_update.php" method="POST"/>
+<left>
+<table align="center" width="25" height="10" cellpadding="-600">
+<tr>
+<th style="color:white;font-family:verdana;background-color:;">SET<th><td>
+<th style="color:white;font-family:verdana;background-color:gray;">CUSTOMER_NAME<th><td>
+<td><input  type="text" name="name"/></td>
+<th style="color:white;font-family:verdana;background-color:;">To<th><td>
+<th style="color:white;font-family:verdana;background-color:gray;">CUSTOMER_ID</th><td>
+<td><input  type="text" name="id"/></td>
+
+
+<td><input type="submit" value="update"/></td>
+</td></tr></tr>
+</table></left>
+</form>
+</body>
+</html>

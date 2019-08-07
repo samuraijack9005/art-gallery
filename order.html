@@ -1,0 +1,65 @@
+<html>
+<head><title>order info</title></head>
+<body style="background-image:url('ren.jpg');background-repeat:no-repeat;background-size:cover;">
+<h1 style="text-align:center;color:lightgray;">ORDER</h1>
+
+<form action="order.php" method="POST"/>
+<table style="background-color:gray;" border="3px">
+<tr>
+<th>Order_id</th>
+<td><input type="text" name="order_id"/></td>
+</tr>
+<tr>
+<th>Cust_id</th>
+<td><input type="text" name="cust_id"/></td>
+</tr>
+<tr>
+<th>Arts_id</th>
+<td><input type="text" name="arts_id"/></td>
+</tr>
+<tr>
+<th>Order_type</th>
+<td><input type="text" name="order_type"/></td>
+</tr>
+
+<tr>
+<td> <input type="submit"/></td>
+<td> <input type="reset"/> </td>
+</tr>
+</table>
+</form>
+
+<table align="bottom" width="25" height="10" cellpadding="-600">
+<td><a href="http://localhost/phpmyadmin/sql.php?db=gallery&table=order1&printview=1&sql_query=SELECT+%2A+FROM+%60order1%60&pftext=F&token=5a5d8fec64e4d5e8b4af2385c6a0a3fb"><font size="4" face="verdana"><button>Show_Table</button></font></a></td>
+</table>
+<form action="order_delete.php" method="POST"/>
+<right>
+<table align="right" width="25" height="10" cellpadding="-600">
+<tr>
+<th style="color:white;font-family:verdana;background-color:red;">order_id</th><td>
+<td><input  type="text" name="id"/></td>
+
+
+<td><input type="submit" value="Delete"/></td>
+</td></tr></tr>
+</table></right>
+</form>
+
+<form action="order_update.php" method="POST"/>
+<left>
+<table align="center" width="25" height="10" cellpadding="-600">
+<tr>
+<th style="color:white;font-family:verdana;background-color:;">SET<th><td>
+<th style="color:white;font-family:verdana;background-color:gray;">ARTS_ID<th><td>
+<td><input  type="text" name="arts_id"/></td>
+<th style="color:white;font-family:verdana;background-color:;">To<th><td>
+<th style="color:white;font-family:verdana;background-color:gray;">ORDER_ID</th><td>
+<td><input  type="text" name="order_id"/></td>
+
+
+<td><input type="submit" value="update"/></td>
+</td></tr></tr>
+</table></left>
+</form>
+</body>
+</html>

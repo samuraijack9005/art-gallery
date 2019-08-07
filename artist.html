@@ -1,0 +1,71 @@
+<html>
+<head>
+<title> artist info </title>
+</head>
+<body style="background-image:url('ren.jpg');background-repeat:no-repeat;background-size:cover;">
+<h1 style="color:white;background-color:;text-align:center">ARTIST</h1>
+<
+<form action="artist.php" method="post"/>
+<table style="background-color:gray;"border="3px">
+<tr>
+<th style="color:;">ID </th>
+<td> <input type="text" name="id" /> </td>
+</tr>
+<tr>
+<th style="color:;"> Name </th>
+<td> <input type="text" name="name" /> </td>
+</tr>
+<tr>
+<th style="color:;"><b> Age</b> </th>
+<td> <input type="text" name="age" /> </td>
+</tr>
+<tr>
+<th style="color:;"> Address </th>
+<td> <input type="text" name="address" /> </td>
+</tr>
+<tr>
+<th style="color:;">Type </th>
+<td> <input type="text" name="type" /> </td>
+</tr>
+<tr>
+<td> <input type="submit"/></td>
+<td> <input type="reset"/> </td>
+</tr>
+</table>
+</form>
+<table align="bottom" width="25" height="10" cellpadding="-600">
+<td><a href="http://localhost/phpmyadmin/sql.php?db=gallery&table=artist&printview=1&sql_query=SELECT+%2A+FROM+%60artist%60&pftext=F&token=5a5d8fec64e4d5e8b4af2385c6a0a3fb"><font size="4" face="verdana"><button>Show_Table</button></font></a></td>
+</table>
+
+
+<form action="artist_delete.php" method="POST"/>
+<right>
+<table align="right" width="25" height="10" cellpadding="-600">
+<tr>
+<th style="color:white;font-family:verdana;background-color:red;">ID</th><td>
+<td><input  type="text" name="id"/></td>
+
+
+<td><input type="submit" value="Delete"/></td>
+</td></tr></tr>
+</table></right>
+</form>
+
+<form action="artist_update.php" method="POST"/>
+<left>
+<table align="center" width="25" height="10" cellpadding="-600">
+<tr>
+<th style="color:white;font-family:verdana;background-color:;">SET<th><td>
+<th style="color:white;font-family:verdana;background-color:gray;">NAME<th><td>
+<td><input  type="text" name="name"/></td>
+<th style="color:white;font-family:verdana;background-color:;">To<th><td>
+<th style="color:white;font-family:verdana;background-color:gray;">ID</th><td>
+<td><input  type="text" name="id"/></td>
+
+
+<td><input type="submit" value="update"/></td>
+</td></tr></tr>
+</table></left>
+</form>
+</body>
+</html>

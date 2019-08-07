@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head><title color=00000f>ART Gallery</title></head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+background-color:#4CAF50;
+}
+
+
+</style>
+</head>
+<body style="background-image:url('cloud.jpg');background-repeat:no-repeat;background-size:100% 100hv;">
+<ul>
+  <li><a class="active" href="home.html"><font size="4" face="verdana">Home</font></a></li>
+  <li><a href="http://localhost/phpmyadmin/sql.php?db=gallery&table=order1&server=1&target=&token=a6edce34306930e0a4e0ebae742ba74b#PMAURL-5:pmd_general.php?db=gallery&table=&server=1&target=&token=a6edce34306930e0a4e0ebae742ba74b"><font size="4" face="verdana">Schema</font></a></li>
+  <li><a href="contact.html"><font size="4" face="verdana">Contact</font></a></li>
+  <li><a href="about.html"><font size="4" face="verdana">About</font></a></li>
+</ul>
+<form action="login.php" method="POST"/>
+<right>
+<table align="right" width="25" height="10" cellpadding="-600">
+<tr>
+<tr>
+<th style="color:white;font-family:verdana;">User</th><td><input  type="text" name="user"/></td>
+</tr>
+<tr>
+<th style="color:white;font-family:verdana;">Password</th><td><input type="password" name="pass"/></td></tr>
+<tr cellpadding="-30">
+<td><input type="submit" value="sign in"/></td>
+</tr></tr>
+</table></right>
+<table align="bottom">
+</table>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<html>
+<head><title>arts info</title></head>
+<body style="background-image:url('ren.jpg');background-repeat:no-repeat;background-size:cover;">
+
+<h1 style="text-align:center;color:white;">ARTS</h1>
+
+<form action="arts.php" method="POST"/>
+<table style="background-color:gray;" border="3px">
+<tr>
+<th style="color:;">Arts_id</th>
+<td><input type="text" name="arts_id"/></td>
+</tr>
+<tr>
+<th style="color:;">Arts_type</th>
+<td><input type="text" name="arts_type"/></td>
+</tr>
+<tr>
+<th style="color:;">Artist_id</th>
+<td><input type="text" name="artist_id"/></td>
+</tr>
+<tr>
+<th style="color:;">Arts_desc</th>
+<td><input type="text" name="arts_desc"/></td>
+</tr>
+<tr>
+<td> <input type="submit"/></td>
+<td> <input type="reset"/> </td>
+</tr>
+</table>
+</form>
+<form action="arts_delete.php" method="POST"/>
+<right>
+<table align="right" width="25" height="10" cellpadding="-600">
+<tr>
+<th style="color:white;font-family:verdana;background-color:red;">ARTS_id</th><td>
+<td><input  type="text" name="id"/></td>
+
+
+<td><input type="submit" value="Delete"/></td>
+</td></tr></tr>
+</table></right>
+</form>
+<table align="bottom" width="25" height="10" cellpadding="-600">
+<td><a href="http://localhost/phpmyadmin/sql.php?db=gallery&table=arts&printview=1&sql_query=SELECT+%2A+FROM+%60arts%60&pftext=F&token=a5e3a78d1a2a725d3e23b44ce9a70c4e"><font size="4" face="verdana"><button>Show_Table</button></font></a></td>
+</table>
+<form action="arts_update.php" method="POST"/>
+<left>
+<table align="center" width="25" height="10" cellpadding="-600">
+<tr>
+<th style="color:white;font-family:verdana;background-color:;">SET<th><td>
+<th style="color:white;font-family:verdana;background-color:gray;">ARTS_TYPE<th><td>
+<td><input  type="text" name="type"/></td>
+<th style="color:white;font-family:verdana;background-color:;">To<th><td>
+<th style="color:white;font-family:verdana;background-color:gray;">ARTS_ID</th><td>
+<td><input  type="text" name="id"/></td>
+
+
+<td><input type="submit" value="update"/></td>
+</td></tr></tr>
+</table></left>
+</form>
+</body>
+</html>
